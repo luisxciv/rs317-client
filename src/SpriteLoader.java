@@ -15,7 +15,8 @@ public class SpriteLoader {
 	 * cache.
 	 * 
 	 */
-	public static boolean DUMP_SPRITES = true;
+	public static boolean DUMP_SPRITES = false
+			;
 
 
 	public static void loadSprites() {
@@ -44,7 +45,7 @@ public class SpriteLoader {
 			e.printStackTrace();
 		}
 
-		File[] titlescreen = new File[]{ new File(Signlink.findcachedir() + "bg.png"), new File(Signlink.findcachedir() + "hibox.png"), new File(Signlink.findcachedir() + "hilog.png") };
+		/*File[] titlescreen = new File[]{ new File(Signlink.findcachedir() + "bg.png"), new File(Signlink.findcachedir() + "hibox.png"), new File(Signlink.findcachedir() + "hilog.png") };
 
 		if (titlescreen[0].exists()) {
 			sprites[6] = new Sprite(titlescreen[0]);
@@ -54,7 +55,7 @@ public class SpriteLoader {
 		}
 		if (titlescreen[2].exists()) {
 			sprites[7] = new Sprite(titlescreen[2]);
-		}
+		}*/
 	}
 
 	/**
