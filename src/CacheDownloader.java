@@ -53,12 +53,11 @@ public class CacheDownloader implements Runnable {
 	}
 
 	private void handleException(Exception e) {
-		StringBuilder strBuff = new StringBuilder();
-		strBuff.append("Something went wrong downloading your cache!\r\n");
+		System.err.println("Something went wrong downloading your cache!\r\n");
 		//strBuff.append("Please copy the error code and contact us via forums for assistantce.\r\n");
 	//	strBuff.append("http://www.site.com\r\n\r\n");
 		//strBuff.append("Error Code: [" + e.getClass().getSimpleName() + "]");
-		//alert("Sythescape", strBuff.toString(), true);
+		alert("Sythescape", strBuff.toString(), true);
 		//int option = JOptionPane.showConfirmDialog(null, "Would you like to visit our forums?", " Error", JOptionPane.YES_NO_OPTION);
 		//if (option == 0) {
 		//	client.openURL("http://www.site.com");
@@ -95,7 +94,6 @@ public class CacheDownloader implements Runnable {
 				alert("Sythesacape", "Download finished! Restart the Client to start playing!", false);
 				OutputStream out = new FileOutputStream(VERSION_FILE);
 				out.write(String.valueOf(newest).getBytes());
-				Runtime.getRuntime().exec("java -jar myApp.jar");
 				System.exit(0);
 				} else {
 
