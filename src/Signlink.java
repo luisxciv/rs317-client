@@ -101,11 +101,16 @@ public final class Signlink implements Runnable {
 			}
 		}
 	}
-	
+
 	public static String findcachedir() {
-		return "./Cache/";
-    }
-	
+		File file = new File(System.getProperty("user.home") + "/SythescapeCache/");
+		if (!file.exists()) {
+			if (!file.mkdir())
+				return secondDir();
+		}
+		return System.getProperty("user.home") + "/SythescapeCache/";
+	}
+
 	public static String secondDir() {
 		File file = new File("c:/SythescapeCache/");
 		if (!file.exists())
