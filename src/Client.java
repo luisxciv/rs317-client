@@ -7898,7 +7898,7 @@ public class Client extends ClientEngine {
 
 	void startUp() {
 		rebuildFrameSize(frameMode, frameWidth, frameHeight);
-//		/new CacheDownloader(this).run();
+		new CacheDownloader(this).run();
 
 		SpriteLoader.loadSprites();
 		cacheSprite = SpriteLoader.sprites;
