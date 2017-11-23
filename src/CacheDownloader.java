@@ -57,7 +57,7 @@ public class CacheDownloader implements Runnable {
 		//strBuff.append("Please copy the error code and contact us via forums for assistantce.\r\n");
 	//	strBuff.append("http://www.site.com\r\n\r\n");
 		//strBuff.append("Error Code: [" + e.getClass().getSimpleName() + "]");
-		alert("Sythescape", strBuff.toString(), true);
+		//alert("Sythescape", strBuff.toString(), true);
 		//int option = JOptionPane.showConfirmDialog(null, "Would you like to visit our forums?", " Error", JOptionPane.YES_NO_OPTION);
 		//if (option == 0) {
 		//	client.openURL("http://www.site.com");
