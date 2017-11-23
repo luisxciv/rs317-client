@@ -56,12 +56,12 @@ public class CacheDownloader implements Runnable {
 		StringBuilder strBuff = new StringBuilder();
 		strBuff.append("Something went wrong downloading your cache!\r\n");
 		//strBuff.append("Please copy the error code and contact us via forums for assistantce.\r\n");
-	//	strBuff.append("http://www.vencillio.com\r\n\r\n");
+	//	strBuff.append("http://www.site.com\r\n\r\n");
 		//strBuff.append("Error Code: [" + e.getClass().getSimpleName() + "]");
 		//alert("Sythescape", strBuff.toString(), true);
-		//int option = JOptionPane.showConfirmDialog(null, "Would you like to visit our forums?", "Vencillio Error", JOptionPane.YES_NO_OPTION);
+		//int option = JOptionPane.showConfirmDialog(null, "Would you like to visit our forums?", " Error", JOptionPane.YES_NO_OPTION);
 		//if (option == 0) {
-		//	client.openURL("http://www.vencillio.com");
+		//	client.openURL("http://www.site.com");
 		//} else {
 			System.exit(0);
 		}
